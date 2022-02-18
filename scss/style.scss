@@ -1,0 +1,15 @@
+@use "custom";
+
+// Komponente Importieren:
+@use "components/animations";
+@use "components/buttons";
+@use "components/mixins";
+@use "components/typography";
+
+// Sections Importieren:
+@use "sections/navbar";
+@use "sections/intro-section";
+@use "sections/languages";
+@use "sections/portfolio";
+@use "sections/contact";
+@use "sections/footer";

@@ -1,0 +1,27 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.card {
+  max-width: 100%;
+  height: 6rem;
+  margin-top: 7rem;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  @media screen and (max-width: $medium) {
+      margin-top: 5rem;
+    }
+}
+
+.card-body {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @include services;
+  border-radius: 5px;
+  color: $white;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+

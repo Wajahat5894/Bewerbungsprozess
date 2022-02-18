@@ -1,0 +1,67 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.get-started {
+  padding: 3rem 0;
+  background-color: $gray-200;
+  margin-top: 15rem;
+  @media screen and (max-width: $medium) {
+    margin-top: 10rem;
+  }
+}
+.mb {
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 5rem;
+  }
+}
+
+.gradient2 {
+  background: linear-gradient(
+    to right,
+    rgba($gray-400, 0.6),
+    rgba($gray-500, 0.5)
+  );
+}
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+
+  &__list {
+    position: relative;
+    list-style-type: none;
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+
+    li::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-weight: 600;
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+.shadow1 {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+.shadow {
+  border-radius: 0.25rem;
+}
+
+// Fromular:
+
+.form {
+  padding: 3rem;
+  button {
+    border: none;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

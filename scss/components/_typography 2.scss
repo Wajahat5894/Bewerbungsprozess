@@ -1,0 +1,45 @@
+@use "../custom" as *;
+
+.display-2 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 3.3rem;
+    color: $white;
+    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
+  }
+
+  &--description {
+    font-size: 1.25rem;
+    display: block;
+    color: $white;
+    margin-top: 3rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+  }
+}
+
+// Heading Line
+.heading-line {
+  content: "";
+  width: 27rem;
+  height: 0.25rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom:-2rem;
+  background-color: $blue-darken-4;
+
+  @media screen and (max-width: $medium) {
+    width: 24rem;
+  }
+  @media screen and (max-width: $small) {
+    width: 20rem;
+  }
+}

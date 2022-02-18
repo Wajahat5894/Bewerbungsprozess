@@ -1,0 +1,49 @@
+@use "../custom" as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
+
+  &--intro {
+    display: inline-block;
+    font-weight: 400;
+    color: $white;
+    font-family: "Poppins", sans-serif;
+    font-family: "Public Sans", sans-serif;
+  }
+
+  &--description {
+    font-size: 1.25rem;
+    display: block;
+    color: white;
+    margin-top: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+  }
+}
+
+// Heading Line
+.heading-line::before {
+  content: "";
+  width: 12rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  background-color: $blue-darken-4;
+}
+
+.heading-line::after {
+  content: "";
+  width: 1rem;
+  padding-top: 0.25rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: $blue-darken-4;
+}
+
